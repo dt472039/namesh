@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D City Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-container">
+        <div id="speedometer">Speed: <span id="speed">0</span> km/h</div>
+        <div id="scoreBoard">Score: <span id="score">0</span></div>
+        <div id="controls-help">Use WASD or Arrow Keys to Drive</div>
+        
+        <div id="startScreen" class="screen">
+            <h1>3D City Racing</h1>
+            <p>Drive around the city map. Watch out for AI traffic and speed breakers!</p>
+            <button id="startBtn">Start Engine</button>
+        </div>
+        
+        <div id="gameOverScreen" class="screen hidden">
+            <h1>CRASHED!</h1>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Try Again</button>
+        </div>
+    </div>
+    
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
